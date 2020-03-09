@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Success!
+{% endblock %}
+
+{% block body %}
+    <h1>Success!</h1>
+    <form action="{{ url_for('log') }}">
+    <input class="btn btn-primary" type="submit" value="Log in" />
+    </form>
+{% endblock %}

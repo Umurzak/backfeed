@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Backfeed
+{% endblock %}
+
+{% block body %}
+    <h1>Backfeed Log in</h1>
+
+    <form action="{{ url_for('logged') }}" method="post">
+
+        <div class="form-group">
+            <input class="form-control" name="namelog" placeholder="Username">
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="passwordlog" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary">Login</button>
+        </div>
+
+    </form>
+{% endblock %}
